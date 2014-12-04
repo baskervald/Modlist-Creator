@@ -10,5 +10,6 @@ input.onkeydown = function ( e ){
 button.onclick = submit;
 
 function submit(){
+  url.className = 'fancyurl';
   url.textContent = 'https://ml.reddit.com/r/themoddingofisaac/search?q=flair%3Arelease+author%3A' + encodeURIComponent(input.value) + '&restrict_sr=on';
 }

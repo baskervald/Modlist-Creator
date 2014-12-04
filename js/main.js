@@ -6,5 +6,5 @@ input.onkeydown = function ( e ){
 };
 
 function submit(){
-  input.value = 'https://ml.reddit.com/r/themoddingofisaac/search?q=flair%3Arelease+author%3A' + encodeURIComponent(input.value);
+  input.value = 'https://ml.reddit.com/r/themoddingofisaac/search?q=flair%3Arelease+author%3A' + encodeURIComponent(input.value) + '&restrict_sr=on';
 }

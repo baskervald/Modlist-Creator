@@ -3,7 +3,9 @@
   <head>
     <script type="text/javascript">
       if( window.location.hash ) {
-        window.location.replace( "https://ml.reddit.com/r/themoddingofisaac/search?restrict_sr=on&q=flair%3Arelease+author%3A" + decodeURIComponent( window.location.hash ) );
+        var str = decodeURIComponent( window.location.hash );
+        var username = str.slice( 1 , str.length );
+        window.location.replace( "https://ml.reddit.com/r/themoddingofisaac/search?restrict_sr=on&q=flair%3Arelease+author%3A" + username);
       }
     </script>
   </head>
